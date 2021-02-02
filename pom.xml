@@ -18,8 +18,16 @@
     </licenses>
     <scm>
         <url>https://github.com/rbkmoney/java-service-dependencies</url>
+        <developerConnection>scm:git:ssh://github.com/rbkmoney/java-service-dependencies.git</developerConnection>
+        <connection>scm:git:git://github.com/rbkmoney/java-service-dependencies.git</connection>
     </scm>
     <properties>
+        <pubRepoId>ossrh</pubRepoId>
+        <pubRepo>https://oss.sonatype.org/content/repositories/releases</pubRepo>
+        <pubSnapRepoId>ossrh</pubSnapRepoId>
+        <pubSnapRepo>https://oss.sonatype.org/content/repositories/snapshots</pubSnapRepo>
+        <pubStagingRepoId>ossrh</pubStagingRepoId>
+        <pubStagingRepo>https://oss.sonatype.org/</pubStagingRepo>
         <custom-metrics.version>1.2.0</custom-metrics.version>
         <custom-actuator.version>0.0.4</custom-actuator.version>
         <woody.version>1.1.22</woody.version>
@@ -43,6 +51,110 @@
         <rbk-http-client.version>0.0.5-SNAPSHOT</rbk-http-client.version>
         <spring-statsd.version>1.1.3</spring-statsd.version>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>private</id>
+            <activation>
+                <property>
+                    <name>env.MVN_PROFILE</name>
+                    <value>private</value>
+                </property>
+            </activation>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>${privSnapRepoId}</id>
+                    <url>${privSnapRepo}</url>
+                </snapshotRepository>
+                <repository>
+                    <id>${privRepoId}</id>
+                    <url>${privRepo}</url>
+                </repository>
+            </distributionManagement>
+            <repositories>
+                <repository>
+                    <id>${privRepoId}</id>
+                    <url>${privRepo}</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>${privSnapRepoId}</id>
+                    <url>${privSnapRepo}</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>${pubSnapRepoId}</id>
+                    <url>${pubSnapRepo}</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+        <profile>
+            <id>public</id>
+            <activation>
+                <property>
+                    <name>env.MVN_PROFILE</name>
+                    <value>public</value>
+                </property>
+            </activation>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>${pubSnapRepoId}</id>
+                    <url>${pubSnapRepo}</url>
+                </snapshotRepository>
+                <repository>
+                    <id>${pubRepoId}</id>
+                    <url>${pubRepo}</url>
+                </repository>
+            </distributionManagement>
+            <repositories>
+                <repository>
+                    <id>${pubSnapRepoId}</id>
+                    <url>${pubSnapRepo}</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>1.6.7</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <serverId>${pubStagingRepoId}</serverId>
+                            <nexusUrl>${pubStagingRepo}</nexusUrl>
+                            <autoReleaseAfterClose>${autoReleaseAfterClose}</autoReleaseAfterClose>
+                            <stagingProgressTimeoutMinutes>${stagingProgressTimeoutMinutes}</stagingProgressTimeoutMinutes>
+                            <keepStagingRepositoryOnCloseRuleFailure>${keepStagingRepositoryOnCloseRuleFailure}</keepStagingRepositoryOnCloseRuleFailure>
+                            <keepStagingRepositoryOnFailure>${keepStagingRepositoryOnFailure}</keepStagingRepositoryOnFailure>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
