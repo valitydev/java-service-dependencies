@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.rbkmoney</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
     <name>java-service-dependencies</name>
     <description>RBK.Money java service dependencies</description>
@@ -31,7 +31,6 @@
         <custom-metrics.version>1.2.0</custom-metrics.version>
         <custom-actuator.version>0.0.4</custom-actuator.version>
         <woody.version>1.1.22</woody.version>
-        <shared-resources.version>0.3.8</shared-resources.version>
         <lombok.version>1.18.16</lombok.version>
         <maven-remote-resources-plugin.version>1.6.0</maven-remote-resources-plugin.version>
         <damsel.version>1.474-c5b986f</damsel.version>
@@ -40,9 +39,10 @@
         <cds-utils.version>1.0.4</cds-utils.version>
         <error-mapping-java.version>1.0.8</error-mapping-java.version>
         <adapter-starter.version>0.0.17</adapter-starter.version>
-        <adapter-payout-starter.version>1.0.10</adapter-payout-starter.version>
+        <adapter-payout-starter.version>1.0.12</adapter-payout-starter.version>
         <adapter-starter-test.version>0.0.3</adapter-starter-test.version>
         <adapter-client.version>2.1.28</adapter-client.version>
+        <adapter-common-lib.version>0.0.28</adapter-common-lib.version>
         <nop-rolling.version>1.0.4</nop-rolling.version>
         <geck.verion>0.6.11</geck.verion>
         <cds-client-keyring.version>1.268-45c8524</cds-client-keyring.version>
@@ -50,6 +50,7 @@
         <kafka-common-lib.vesion>0.1.7</kafka-common-lib.vesion>
         <rbk-http-client.version>0.0.5-SNAPSHOT</rbk-http-client.version>
         <spring-statsd.version>1.1.3</spring-statsd.version>
+        <shared-resources.version>0.3.8</shared-resources.version>
     </properties>
 
     <profiles>
@@ -178,11 +179,6 @@
                 <version>${woody.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.rbkmoney</groupId>
-                <artifactId>shared-resources</artifactId>
-                <version>${shared-resources.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
@@ -231,6 +227,11 @@
                 <groupId>com.rbkmoney.adapter-thrift-lib</groupId>
                 <artifactId>cds-utils</artifactId>
                 <version>${cds-utils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rbkmoney</groupId>
+                <artifactId>adapter-common-lib</artifactId>
+                <version>${adapter-common-lib.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.rbkmoney</groupId>
@@ -291,6 +292,11 @@
                 <groupId>com.rbkmoney.rbk.http.client</groupId>
                 <artifactId>rbk-http-client</artifactId>
                 <version>${rbk-http-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rbkmoney</groupId>
+                <artifactId>shared-resources</artifactId>
+                <version>${shared-resources.version}</version>
             </dependency>
 
         </dependencies>
