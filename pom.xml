@@ -21,6 +21,12 @@
         <developerConnection>scm:git:ssh://github.com/rbkmoney/java-service-dependencies.git</developerConnection>
         <connection>scm:git:git://github.com/rbkmoney/java-service-dependencies.git</connection>
     </scm>
+    <developers>
+        <developer>
+            <organization>RBK.money</organization>
+            <organizationUrl>https://rbk.money</organizationUrl>
+        </developer>
+    </developers>
     <properties>
         <pubRepoId>ossrh</pubRepoId>
         <pubRepo>https://oss.sonatype.org/content/repositories/releases</pubRepo>
