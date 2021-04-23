@@ -40,7 +40,7 @@
         <lombok.version>1.18.16</lombok.version>
         <maven-remote-resources-plugin.version>1.6.0</maven-remote-resources-plugin.version>
         <damsel.version>1.489-8851c24</damsel.version>
-        <mamsel.version>0.0.1</damsel.version>
+        <mamsel.version>0.0.1</mamsel.version>
         <damsel-utils.version>1.0.6</damsel-utils.version>
         <cds-client-storage.version>2.1.23</cds-client-storage.version>
         <cds-utils.version>1.0.4</cds-utils.version>
