@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.rbkmoney</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <packaging>pom</packaging>
     <name>java-service-dependencies</name>
     <description>RBK.Money java service dependencies</description>
@@ -54,7 +54,7 @@
         <geck.verion>0.6.11</geck.verion>
         <cds-client-keyring.version>1.268-45c8524</cds-client-keyring.version>
         <db-common-lib.version>0.0.3</db-common-lib.version>
-        <kafka-common-lib.vesion>0.1.7</kafka-common-lib.vesion>
+        <kafka-common-lib.version>0.1.8</kafka-common-lib.version>
         <rbk-http-client.version>0.0.5-SNAPSHOT</rbk-http-client.version>
         <spring-statsd.version>1.1.3</spring-statsd.version>
         <shared-resources.version>0.3.8</shared-resources.version>
@@ -197,7 +197,7 @@
             <dependency>
                 <groupId>com.rbkmoney</groupId>
                 <artifactId>kafka-common-lib</artifactId>
-                <version>${kafka-common-lib.vesion}</version>
+                <version>${kafka-common-lib.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.rbkmoney.rbk.http.client</groupId>
