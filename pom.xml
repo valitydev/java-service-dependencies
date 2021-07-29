@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.rbkmoney</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.2.4</version>
+    <version>1.2.5</version>
     <packaging>pom</packaging>
     <name>java-service-dependencies</name>
     <description>RBK.Money java service dependencies</description>
@@ -39,7 +39,7 @@
         <woody.version>1.1.23</woody.version>
         <lombok.version>1.18.16</lombok.version>
         <maven-remote-resources-plugin.version>1.6.0</maven-remote-resources-plugin.version>
-        <damsel.version>1.498-d6c4aae</damsel.version>
+        <damsel.version>1.502-2479ea4</damsel.version>
         <mamsel.version>0.1.0</mamsel.version>
         <damsel-utils.version>1.0.6</damsel-utils.version>
         <cds-client-storage.version>2.1.23</cds-client-storage.version>
