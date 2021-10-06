@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.rbkmoney</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.2.6</version>
+    <version>1.2.7</version>
     <packaging>pom</packaging>
     <name>java-service-dependencies</name>
     <description>RBK.Money java service dependencies</description>
@@ -49,7 +49,7 @@
         <adapter-payout-starter.version>1.0.12</adapter-payout-starter.version>
         <adapter-starter-test.version>0.0.3</adapter-starter-test.version>
         <adapter-client.version>2.1.28</adapter-client.version>
-        <adapter-common-lib.version>0.0.28</adapter-common-lib.version>
+        <adapter-common-lib.version>0.0.29</adapter-common-lib.version>
         <nop-rolling.version>1.0.4</nop-rolling.version>
         <geck.verion>0.6.11</geck.verion>
         <cds-client-keyring.version>1.268-45c8524</cds-client-keyring.version>
