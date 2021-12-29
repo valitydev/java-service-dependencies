@@ -16,11 +16,13 @@
             <url>https://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
+
     <scm>
         <url>https://github.com/valitydev/java-service-dependencies</url>
         <developerConnection>scm:git:ssh://github.com/valitydev/java-service-dependencies.git</developerConnection>
         <connection>scm:git:git://github.com/valitydev/java-service-dependencies.git</connection>
     </scm>
+
     <developers>
         <developer>
             <email>devs@vality.dev</email>
@@ -28,13 +30,14 @@
             <organizationUrl>https://vality.dev</organizationUrl>
         </developer>
     </developers>
+
     <properties>
         <pubRepoId>ossrh</pubRepoId>
-        <pubRepo>https://oss.sonatype.org/content/repositories/releases</pubRepo>
+        <pubRepo>https://s01.oss.sonatype.org/content/repositories/releases</pubRepo>
         <pubSnapRepoId>ossrh</pubSnapRepoId>
-        <pubSnapRepo>https://oss.sonatype.org/content/repositories/snapshots</pubSnapRepo>
+        <pubSnapRepo>https://s01.oss.sonatype.org/content/repositories/snapshots</pubSnapRepo>
         <pubStagingRepoId>ossrh</pubStagingRepoId>
-        <pubStagingRepo>https://oss.sonatype.org/</pubStagingRepo>
+        <pubStagingRepo>https://s01.oss.sonatype.org/</pubStagingRepo>
         <custom-metrics.version>1.2.5</custom-metrics.version>
         <custom-actuator.version>0.0.5</custom-actuator.version>
         <woody.version>1.1.23</woody.version>
