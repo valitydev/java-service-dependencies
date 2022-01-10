@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>dev.vality</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>pom</packaging>
     <name>Vality parent</name>
     <description>Vality library parent pom</description>
@@ -49,9 +49,9 @@
         <cds-client-storage.version>2.1.23</cds-client-storage.version>
         <cds-utils.version>1.0.6</cds-utils.version>
         <error-mapping-java.version>1.0.8</error-mapping-java.version>
-        <adapter-starter.version>0.0.17</adapter-starter.version>
+        <adapter-starter.version>0.0.19</adapter-starter.version>
         <adapter-payout-starter.version>1.0.12</adapter-payout-starter.version>
-        <adapter-starter-test.version>0.0.3</adapter-starter-test.version>
+        <adapter-starter-test.version>0.0.4</adapter-starter-test.version>
         <adapter-client.version>2.1.28</adapter-client.version>
         <adapter-common-lib.version>0.0.29</adapter-common-lib.version>
         <nop-rolling.version>1.0.4</nop-rolling.version>
