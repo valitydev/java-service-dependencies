@@ -41,10 +41,10 @@
         <custom-metrics.version>1.2.5</custom-metrics.version>
         <custom-actuator.version>0.0.5</custom-actuator.version>
         <woody.version>1.0.0</woody.version>
-        <lombok.version>1.18.16</lombok.version>
+        <lombok.version>1.18.22</lombok.version>
         <maven-remote-resources-plugin.version>1.6.0</maven-remote-resources-plugin.version>
         <damsel.version>1.538-5addc41</damsel.version>
-        <mamsel.version>0.1.0</mamsel.version>
+        <mamsel.version>0.1.2</mamsel.version>
         <damsel-utils.version>1.0.6</damsel-utils.version>
         <cds-client-storage.version>2.1.23</cds-client-storage.version>
         <cds-utils.version>1.0.6</cds-utils.version>
@@ -53,16 +53,16 @@
         <adapter-payout-starter.version>1.0.12</adapter-payout-starter.version>
         <adapter-starter-test.version>0.0.4</adapter-starter-test.version>
         <adapter-client.version>3.0.0</adapter-client.version>
-        <adapter-common-lib.version>0.0.29</adapter-common-lib.version>
+        <adapter-common-lib.version>0.0.30</adapter-common-lib.version>
         <nop-rolling.version>1.0.4</nop-rolling.version>
-        <geck.verion>0.6.11</geck.verion>
+        <geck.verion>0.6.12</geck.verion>
         <cds-client-keyring.version>1.268-45c8524</cds-client-keyring.version>
-        <db-common-lib.version>0.0.3</db-common-lib.version>
+        <db-common-lib.version>0.0.5</db-common-lib.version>
         <kafka-common-lib.version>0.1.9</kafka-common-lib.version>
         <rbk-http-client.version>0.0.5-SNAPSHOT</rbk-http-client.version>
         <spring-statsd.version>1.1.3</spring-statsd.version>
         <shared-resources.version>1.4.0</shared-resources.version>
-        <kotlin-logging.version>2.0.6</kotlin-logging.version>
+        <kotlin-logging.version>2.1.21</kotlin-logging.version>
         <mockito-kotlin.version>4.0.0</mockito-kotlin.version>
     </properties>
 
@@ -333,7 +333,7 @@
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-compiler-plugin</artifactId>
-                            <version>3.8.1</version>
+                            <version>3.9.0</version>
                             <configuration>
                                 <source>1.8</source>
                                 <target>1.8</target>
