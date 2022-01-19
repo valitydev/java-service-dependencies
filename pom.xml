@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>dev.vality</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
     <name>Vality parent</name>
     <description>Vality library parent pom</description>
@@ -44,7 +44,7 @@
         <lombok.version>1.18.22</lombok.version>
         <maven-remote-resources-plugin.version>1.6.0</maven-remote-resources-plugin.version>
         <damsel.version>1.538-5addc41</damsel.version>
-        <mamsel.version>0.1.2</mamsel.version>
+        <mamsel.version>0.2.0</mamsel.version>
         <damsel-utils.version>1.0.6</damsel-utils.version>
         <cds-client-storage.version>2.1.23</cds-client-storage.version>
         <cds-utils.version>1.0.6</cds-utils.version>
@@ -99,7 +99,7 @@
                 <version>${damsel.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.rbkmoney</groupId>
+                <groupId>dev.vality</groupId>
                 <artifactId>mamsel</artifactId>
                 <version>${mamsel.version}</version>
             </dependency>
