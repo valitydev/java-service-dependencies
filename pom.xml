@@ -40,10 +40,10 @@
         <pubStagingRepo>https://s01.oss.sonatype.org/</pubStagingRepo>
         <custom-metrics.version>1.2.5</custom-metrics.version>
         <custom-actuator.version>0.0.5</custom-actuator.version>
-        <woody.version>1.0.0</woody.version>
+        <woody.version>1.0.4</woody.version>
         <lombok.version>1.18.22</lombok.version>
         <maven-remote-resources-plugin.version>1.6.0</maven-remote-resources-plugin.version>
-        <damsel.version>1.538-5addc41</damsel.version>
+        <damsel.version>1.544-dcd92dd</damsel.version>
         <mamsel.version>0.2.0</mamsel.version>
         <damsel-utils.version>1.0.6</damsel-utils.version>
         <cds-client-storage.version>2.1.23</cds-client-storage.version>
