@@ -44,7 +44,7 @@
         <woody.version>1.0.4</woody.version>
         <lombok.version>1.18.22</lombok.version>
         <maven-remote-resources-plugin.version>1.6.0</maven-remote-resources-plugin.version>
-        <damsel.version>1.546-b25d336</damsel.version>
+        <damsel.version>1.551-df1c52f</damsel.version>
         <mamsel.version>0.2.1</mamsel.version>
         <damsel-utils.version>1.0.0</damsel-utils.version>
         <cds-client-storage.version>2.1.23</cds-client-storage.version>
@@ -55,7 +55,7 @@
         <adapter-starter-test.version>0.0.1</adapter-starter-test.version>
         <adapter-client.version>1.0.1</adapter-client.version>
         <adapter-common-lib.version>1.0.0</adapter-common-lib.version>
-        <nop-rolling.version>0.0.1</nop-rolling.version>
+        <nop-rolling.version>1.0.1</nop-rolling.version>
         <geck.verion>0.0.1</geck.verion>
         <cds-client-keyring.version>1.268-45c8524</cds-client-keyring.version>
         <db-common-lib.version>0.0.1</db-common-lib.version>
@@ -257,7 +257,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.3.1</version>
+                        <version>3.3.2</version>
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
@@ -273,7 +273,7 @@
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.8</version>
+                        <version>1.6.11</version>
                         <extensions>true</extensions>
                         <configuration>
                             <serverId>${pubStagingRepoId}</serverId>
@@ -334,7 +334,7 @@
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-compiler-plugin</artifactId>
-                            <version>3.9.0</version>
+                            <version>3.10.0</version>
                             <configuration>
                                 <source>1.8</source>
                                 <target>1.8</target>
