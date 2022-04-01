@@ -44,7 +44,7 @@
         <woody.version>1.0.4</woody.version>
         <lombok.version>1.18.22</lombok.version>
         <maven-remote-resources-plugin.version>1.6.0</maven-remote-resources-plugin.version>
-        <damsel.version>1.557-318a7a6</damsel.version>
+        <damsel.version>1.558-3efe7df</damsel.version>
         <mamsel.version>0.2.1</mamsel.version>
         <damsel-utils.version>1.0.0</damsel-utils.version>
         <cds-client-storage.version>2.1.23</cds-client-storage.version>
@@ -273,7 +273,7 @@
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.8</version>
+                        <version>1.6.12</version>
                         <extensions>true</extensions>
                         <configuration>
                             <serverId>${pubStagingRepoId}</serverId>
@@ -334,7 +334,7 @@
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-compiler-plugin</artifactId>
-                            <version>3.10.0</version>
+                            <version>3.10.1</version>
                             <configuration>
                                 <source>1.8</source>
                                 <target>1.8</target>
