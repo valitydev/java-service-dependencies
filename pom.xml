@@ -41,7 +41,6 @@
         <woody.version>1.0.4</woody.version>
         <lombok.version>1.18.22</lombok.version>
         <damsel.version>1.563-d384c12</damsel.version>
-        <mamsel.version>0.2.2</mamsel.version>
         <nop-rolling.version>1.0.1</nop-rolling.version>
         <geck.verion>0.0.1</geck.verion>
         <db-common-lib.version>0.0.1</db-common-lib.version>
@@ -73,11 +72,6 @@
                 <groupId>dev.vality</groupId>
                 <artifactId>damsel</artifactId>
                 <version>${damsel.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.vality</groupId>
-                <artifactId>mamsel</artifactId>
-                <version>${mamsel.version}</version>
             </dependency>
             <dependency>
                 <groupId>dev.vality.logback</groupId>
