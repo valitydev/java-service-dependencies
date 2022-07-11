@@ -39,15 +39,15 @@
         <pubStagingRepoId>ossrh</pubStagingRepoId>
         <pubStagingRepo>https://s01.oss.sonatype.org/</pubStagingRepo>
         <woody.version>1.0.4</woody.version>
-        <lombok.version>1.18.22</lombok.version>
-        <damsel.version>1.563-d384c12</damsel.version>
+        <lombok.version>1.18.24</lombok.version>
+        <damsel.version>1.568-9362c08</damsel.version>
         <mamsel.version>0.2.2</mamsel.version>
         <nop-rolling.version>1.0.1</nop-rolling.version>
         <geck.verion>0.0.1</geck.verion>
         <db-common-lib.version>0.0.1</db-common-lib.version>
         <kafka-common-lib.version>0.0.3</kafka-common-lib.version>
         <shared-resources.version>1.0.1</shared-resources.version>
-        <kotlin-logging.version>2.1.21</kotlin-logging.version>
+        <kotlin-logging.version>2.1.23</kotlin-logging.version>
         <mockito-kotlin.version>4.0.0</mockito-kotlin.version>
     </properties>
 
@@ -161,7 +161,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.3.2</version>
+                        <version>3.4.0</version>
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
@@ -177,7 +177,7 @@
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.12</version>
+                        <version>1.6.13</version>
                         <extensions>true</extensions>
                         <configuration>
                             <serverId>${pubStagingRepoId}</serverId>
