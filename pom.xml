@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>dev.vality</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.0.18</version>
+    <version>1.0.19</version>
     <packaging>pom</packaging>
     <name>Vality parent</name>
     <description>Vality library parent pom</description>
@@ -40,12 +40,12 @@
         <pubStagingRepo>https://s01.oss.sonatype.org/</pubStagingRepo>
         <lombok.version>1.18.24</lombok.version>
         <msgpack-proto.version>1.15-ce882a7</msgpack-proto.version>
-        <damsel.version>1.573-4e82c24</damsel.version>
+        <damsel.version>1.578-6655937</damsel.version>
         <nop-rolling.version>1.0.1</nop-rolling.version>
         <geck.verion>0.0.1</geck.verion>
         <db-common-lib.version>0.0.1</db-common-lib.version>
         <kafka-common-lib.version>0.0.3</kafka-common-lib.version>
-        <aws-msk-iam-auth.version>1.1.4</aws-msk-iam-auth.version>
+        <aws-msk-iam-auth.version>1.1.5</aws-msk-iam-auth.version>
         <kotlin-logging.version>2.1.23</kotlin-logging.version>
         <mockito-kotlin.version>4.0.0</mockito-kotlin.version>
     </properties>
