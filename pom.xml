@@ -43,7 +43,7 @@
         <pubStagingRepo>https://s01.oss.sonatype.org/</pubStagingRepo>
         <lombok.version>1.18.24</lombok.version>
         <msgpack-proto.version>1.17-7481bb4</msgpack-proto.version>
-        <damsel.version>1.639-4856124</damsel.version>
+        <damsel.version>1.650-81d1edc</damsel.version>
         <nop-rolling.version>1.0.1</nop-rolling.version>
         <geck.verion>1.0.1</geck.verion>
         <db-common-lib.version>0.0.1</db-common-lib.version>
