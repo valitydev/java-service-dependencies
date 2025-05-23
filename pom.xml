@@ -6,7 +6,7 @@
 
     <groupId>dev.vality</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.0.28</version>
+    <version>1.0.29</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
@@ -41,14 +41,14 @@
         <pubSnapRepo>https://s01.oss.sonatype.org/content/repositories/snapshots</pubSnapRepo>
         <pubStagingRepoId>ossrh</pubStagingRepoId>
         <pubStagingRepo>https://s01.oss.sonatype.org/</pubStagingRepo>
-        <lombok.version>1.18.24</lombok.version>
+        <lombok.version>1.18.38</lombok.version>
         <msgpack-proto.version>1.17-7481bb4</msgpack-proto.version>
-        <damsel.version>1.650-81d1edc</damsel.version>
+        <damsel.version>1.654-ab44b9d</damsel.version>
         <nop-rolling.version>1.0.1</nop-rolling.version>
         <geck.verion>1.0.2</geck.verion>
         <db-common-lib.version>0.0.1</db-common-lib.version>
         <kafka-common-lib.version>0.0.3</kafka-common-lib.version>
-        <aws-msk-iam-auth.version>2.2.0</aws-msk-iam-auth.version>
+        <aws-msk-iam-auth.version>2.3.2</aws-msk-iam-auth.version>
         <kotlin-logging.version>3.0.5</kotlin-logging.version>
         <mockito-kotlin.version>5.4.0</mockito-kotlin.version>
     </properties>
@@ -225,7 +225,7 @@
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-compiler-plugin</artifactId>
-                            <version>3.13.0</version>
+                            <version>3.14.0</version>
                             <configuration>
                                 <source>1.8</source>
                                 <target>1.8</target>
