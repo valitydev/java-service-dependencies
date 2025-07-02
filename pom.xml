@@ -6,7 +6,7 @@
 
     <groupId>dev.vality</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.0.29</version>
+    <version>1.0.30</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
@@ -175,7 +175,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.2.7</version>
+                        <version>3.2.8</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
