@@ -6,7 +6,7 @@
 
     <groupId>dev.vality</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.0.29</version>
+    <version>1.0.30</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
@@ -36,14 +36,14 @@
 
     <properties>
         <pubRepoId>ossrh</pubRepoId>
-        <pubRepo>https://s01.oss.sonatype.org/content/repositories/releases</pubRepo>
+        <pubRepo>https://ossrh-staging-api.central.sonatype.com/content/repositories/releases</pubRepo>
         <pubSnapRepoId>ossrh</pubSnapRepoId>
-        <pubSnapRepo>https://s01.oss.sonatype.org/content/repositories/snapshots</pubSnapRepo>
+        <pubSnapRepo>https://ossrh-staging-api.central.sonatype.com/content/repositories/snapshots</pubSnapRepo>
         <pubStagingRepoId>ossrh</pubStagingRepoId>
-        <pubStagingRepo>https://s01.oss.sonatype.org/</pubStagingRepo>
+        <pubStagingRepo>https://ossrh-staging-api.central.sonatype.com</pubStagingRepo>
         <lombok.version>1.18.38</lombok.version>
         <msgpack-proto.version>1.17-7481bb4</msgpack-proto.version>
-        <damsel.version>1.654-ab44b9d</damsel.version>
+        <damsel.version>1.657-55c7169</damsel.version>
         <nop-rolling.version>1.0.1</nop-rolling.version>
         <geck.verion>1.0.2</geck.verion>
         <db-common-lib.version>0.0.1</db-common-lib.version>
@@ -175,7 +175,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.2.7</version>
+                        <version>3.2.8</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
