@@ -6,7 +6,7 @@
 
     <groupId>dev.vality</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.0.30</version>
+    <version>1.0.3000</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
@@ -35,12 +35,6 @@
     </developers>
 
     <properties>
-        <pubRepoId>ossrh</pubRepoId>
-        <pubRepo>https://ossrh-staging-api.central.sonatype.com/content/repositories/releases</pubRepo>
-        <pubSnapRepoId>ossrh</pubSnapRepoId>
-        <pubSnapRepo>https://ossrh-staging-api.central.sonatype.com/content/repositories/snapshots</pubSnapRepo>
-        <pubStagingRepoId>ossrh</pubStagingRepoId>
-        <pubStagingRepo>https://ossrh-staging-api.central.sonatype.com</pubStagingRepo>
         <lombok.version>1.18.38</lombok.version>
         <msgpack-proto.version>1.17-7481bb4</msgpack-proto.version>
         <damsel.version>1.657-55c7169</damsel.version>
@@ -121,30 +115,19 @@
     <profiles>
         <profile>
             <id>deploy</id>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>${pubSnapRepoId}</id>
-                    <url>${pubSnapRepo}</url>
-                </snapshotRepository>
-                <repository>
-                    <id>${pubRepoId}</id>
-                    <url>${pubRepo}</url>
-                </repository>
-            </distributionManagement>
-            <repositories>
-                <repository>
-                    <id>${pubSnapRepoId}</id>
-                    <url>${pubSnapRepo}</url>
-                    <releases>
-                        <enabled>false</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
             <build>
                 <plugins>
+                    <plugin>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>0.8.0</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <publishingServerId>ossrh</publishingServerId>
+                            <autoPublish>true</autoPublish>
+                            <waitUntil>published</waitUntil>
+                        </configuration>
+                    </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
@@ -160,17 +143,6 @@
                                 </configuration>
                             </execution>
                         </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.7.0</version>
-                        <extensions>true</extensions>
-                        <configuration>
-                            <serverId>${pubStagingRepoId}</serverId>
-                            <nexusUrl>${pubStagingRepo}</nexusUrl>
-                            <autoReleaseAfterClose>${autoReleaseAfterClose}</autoReleaseAfterClose>
-                        </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
