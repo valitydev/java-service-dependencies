@@ -38,7 +38,7 @@
         <woody.version>2.1.0</woody.version>
         <woody-http-bridge.version>0.0.13</woody-http-bridge.version>
         <shared-resources.version>3.0.1</shared-resources.version>
-        <damsel.version>1.668-8cab698</damsel.version>
+        <damsel.version>1.674-368f05b</damsel.version>
         <msgpack-proto.version>1.17-7481bb4</msgpack-proto.version>
         <nop-rolling.version>1.0.1</nop-rolling.version>
         <geck.verion>1.0.2</geck.verion>
