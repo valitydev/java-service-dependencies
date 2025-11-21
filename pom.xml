@@ -6,7 +6,7 @@
 
     <groupId>dev.vality</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.0.37</version>
+    <version>1.0.38</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
