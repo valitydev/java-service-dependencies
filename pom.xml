@@ -6,7 +6,7 @@
 
     <groupId>dev.vality</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>1.0.38</version>
+    <version>1.0.39</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
@@ -36,7 +36,7 @@
 
     <properties>
         <woody.version>2.1.0</woody.version>
-        <woody-http-bridge.version>0.0.13</woody-http-bridge.version>
+        <woody-http-bridge.version>0.0.15</woody-http-bridge.version>
         <shared-resources.version>3.0.1</shared-resources.version>
         <damsel.version>1.674-368f05b</damsel.version>
         <msgpack-proto.version>1.17-7481bb4</msgpack-proto.version>
