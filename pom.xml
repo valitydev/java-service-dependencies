@@ -37,7 +37,7 @@
     <properties>
         <woody.version>3.0.0</woody.version>
         <shared-resources.version>5.0.0</shared-resources.version>
-        <damsel.version>1.685-5c25c2e</damsel.version>
+        <damsel.version>1.699-7280b62</damsel.version>
         <msgpack-proto.version>1.17-7481bb4</msgpack-proto.version>
         <nop-rolling.version>1.0.1</nop-rolling.version>
         <geck.verion>1.0.2</geck.verion>
