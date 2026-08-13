@@ -6,7 +6,7 @@
 
     <groupId>dev.vality</groupId>
     <artifactId>java-service-dependencies</artifactId>
-    <version>2.1.0</version>
+    <version>2.1.1</version>
     <packaging>pom</packaging>
 
     <name>Vality parent</name>
@@ -36,9 +36,8 @@
 
     <properties>
         <woody.version>3.0.0</woody.version>
-        <woody-http-bridge.version>0.0.15</woody-http-bridge.version>
         <shared-resources.version>5.0.0</shared-resources.version>
-        <damsel.version>1.685-5c25c2e</damsel.version>
+        <damsel.version>1.699-7280b62</damsel.version>
         <msgpack-proto.version>1.17-7481bb4</msgpack-proto.version>
         <nop-rolling.version>1.0.1</nop-rolling.version>
         <geck.verion>1.0.2</geck.verion>
@@ -58,11 +57,6 @@
                 <groupId>dev.vality.woody</groupId>
                 <artifactId>woody-api</artifactId>
                 <version>${woody.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.vality</groupId>
-                <artifactId>woody-http-bridge</artifactId>
-                <version>${woody-http-bridge.version}</version>
             </dependency>
             <dependency>
                 <groupId>dev.vality</groupId>
